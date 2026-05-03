@@ -1,0 +1,21 @@
+{
+  "name": "i-know",
+  "description": "你的工程原则守护者 —— 让新手也能写出专业代码。有性格、全自动、教学导向。",
+  "version": "1.0.0",
+  "author": {
+    "name": "23xxCh",
+    "email": ""
+  },
+  "homepage": "https://github.com/23xxCh/I-Know",
+  "repository": "https://github.com/23xxCh/I-Know",
+  "license": "MIT",
+  "keywords": [
+    "skills",
+    "engineering",
+    "best-practices",
+    "code-review",
+    "tdd",
+    "debugging",
+    "learning"
+  ]
+}

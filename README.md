@@ -74,22 +74,34 @@ I-Know：API 就像餐厅的菜单。
 
 ## 安装
 
-### 方式一：一键安装（推荐）
+### 方式一：一行命令安装（推荐）
 
 **macOS / Linux：**
 
 ```bash
-git clone https://github.com/23xxCh/I-Know.git
-cd I-Know
-./install.sh
+curl -fsSL https://raw.githubusercontent.com/23xxCh/I-Know/main/quick-install.sh | bash
 ```
 
 **Windows PowerShell：**
 
 ```powershell
+irm https://raw.githubusercontent.com/23xxCh/I-Know/main/quick-install.ps1 | iex
+```
+
+### 方式二：克隆安装
+
+```bash
 git clone https://github.com/23xxCh/I-Know.git
 cd I-Know
-.\install.ps1
+./install.sh  # macOS/Linux
+# 或 .\install.ps1  # Windows
+```
+
+### 方式三：Claude Code 插件（即将支持）
+
+```bash
+/plugin marketplace add 23xxCh/I-Know
+/plugin install i-know
 ```
 
 ### 方式二：手动安装
@@ -108,9 +120,17 @@ Copy-Item -Path "skills\*" -Destination "$env:USERPROFILE\.claude\skills\" -Recu
 
 将 `CONTEXT.md` 复制到你的项目根目录：
 
+**macOS / Linux：**
 ```bash
-cp CONTEXT.md /path/to/your/project/
+curl -fsSL https://raw.githubusercontent.com/23xxCh/I-Know/main/CONTEXT.md > CONTEXT.md
 ```
+
+**Windows PowerShell：**
+```powershell
+irm https://raw.githubusercontent.com/23xxCh/I-Know/main/CONTEXT.md | Out-File -Encoding utf8 CONTEXT.md
+```
+
+或者手动创建 `CONTEXT.md`，复制 [内容](./CONTEXT.md)。
 
 ---
 

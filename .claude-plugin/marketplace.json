@@ -1,0 +1,25 @@
+{
+  "name": "i-know",
+  "display_name": "I-Know",
+  "description": "你的工程原则守护者 —— 让新手也能写出专业代码",
+  "author": "23xxCh",
+  "repository": "https://github.com/23xxCh/I-Know",
+  "skills": [
+    "i-know",
+    "feature-dev",
+    "bug-fix",
+    "refactor",
+    "learn",
+    "diagnose",
+    "grill-me",
+    "triage",
+    "to-issues",
+    "zoom-out",
+    "caveman"
+  ],
+  "features": [
+    "有性格 —— 不盲从用户，在用户走偏时拉住",
+    "全自动 —— 自动识别场景，加载对应技能",
+    "教学导向 —— 用大白话解释每个决策"
+  ]
+}
