@@ -1,0 +1,12 @@
+# gstack 临时文件
+.gstack/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
