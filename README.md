@@ -72,30 +72,93 @@ I-Know：API 就像餐厅的菜单。
 
 ---
 
-## 快速开始
+## 安装
 
-### 1. 克隆仓库
+### 方式一：一键安装（推荐）
+
+**macOS / Linux：**
 
 ```bash
 git clone https://github.com/23xxCh/I-Know.git
 cd I-Know
+./install.sh
 ```
 
-### 2. 配置 Claude Code
+**Windows PowerShell：**
 
-将 `CLAUDE.md`、`CONTEXT.md` 和 `skills/` 目录复制到你的项目根目录。
-
-或者，在你的项目根目录创建 `.claude/settings.json`：
-
-```json
-{
-  "skills": ["path/to/I-Know/skills"]
-}
+```powershell
+git clone https://github.com/23xxCh/I-Know.git
+cd I-Know
+.\install.ps1
 ```
 
-### 3. 开始使用
+### 方式二：手动安装
 
-直接和 Claude Code 对话，I-Know 会自动识别你的需求并加载对应的技能。
+将 `skills/` 目录复制到 Claude Code 的全局 skills 目录：
+
+```bash
+# macOS / Linux
+cp -r skills/* ~/.claude/skills/
+
+# Windows
+Copy-Item -Path "skills\*" -Destination "$env:USERPROFILE\.claude\skills\" -Recurse
+```
+
+### 配置项目
+
+将 `CONTEXT.md` 复制到你的项目根目录：
+
+```bash
+cp CONTEXT.md /path/to/your/project/
+```
+
+---
+
+## 使用方式
+
+### 斜杠命令
+
+安装后，可以在 Claude Code 中使用以下斜杠命令：
+
+| 命令 | 功能 |
+|------|------|
+| `/i-know` | 主 skill（路由 + 决策引擎） |
+| `/feature-dev` | 新功能开发 |
+| `/bug-fix` | Bug 修复 |
+| `/refactor` | 代码重构 |
+| `/learn` | 学习问答 |
+
+### 自动路由
+
+直接描述需求，Claude Code 会自动识别并调用对应的 skill：
+
+```
+用户：帮我实现一个登录功能
+     → 自动加载 /feature-dev
+
+用户：有个 Bug，点击按钮没反应
+     → 自动加载 /bug-fix
+
+用户：这段代码太乱了，帮我整理一下
+     → 自动加载 /refactor
+
+用户：什么是闭包？
+     → 自动加载 /learn
+```
+
+---
+
+## 卸载
+
+**macOS / Linux：**
+
+```bash
+./uninstall.sh
+```
+
+**Windows：**
+
+手动删除 `~/.claude/skills/` 下的 `i-know`、`feature-dev`、`bug-fix`、`refactor`、`learn` 目录。
 
 ---
 
