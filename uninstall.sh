@@ -18,7 +18,7 @@ echo -e "${YELLOW}=== I-Know 卸载脚本 ===${NC}"
 echo ""
 
 # 要卸载的 skills
-SKILLS=("i-know" "feature-dev" "bug-fix" "refactor" "learn")
+SKILLS=("i-know" "feature-dev" "bug-fix" "refactor" "learn" "diagnose" "grill-me" "triage" "to-issues" "zoom-out" "caveman")
 
 for skill in "${SKILLS[@]}"; do
     if [ -d "$TARGET_DIR/$skill" ]; then

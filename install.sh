@@ -25,7 +25,7 @@ echo "创建 skills 目录..."
 mkdir -p "$TARGET_DIR"
 
 # 安装 skills
-SKILLS=("i-know" "feature-dev" "bug-fix" "refactor" "learn")
+SKILLS=("i-know" "feature-dev" "bug-fix" "refactor" "learn" "diagnose" "grill-me" "triage" "to-issues" "zoom-out" "caveman")
 
 for skill in "${SKILLS[@]}"; do
     echo "安装 /$skill ..."

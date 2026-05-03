@@ -17,7 +17,7 @@ Write-Host "创建 skills 目录..."
 New-Item -ItemType Directory -Force -Path $TargetDir | Out-Null
 
 # 安装 skills
-$Skills = @("i-know", "feature-dev", "bug-fix", "refactor", "learn")
+$Skills = @("i-know", "feature-dev", "bug-fix", "refactor", "learn", "diagnose", "grill-me", "triage", "to-issues", "zoom-out", "caveman")
 
 foreach ($skill in $Skills) {
     Write-Host "安装 /$skill ..."

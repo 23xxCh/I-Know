@@ -127,6 +127,12 @@ cp CONTEXT.md /path/to/your/project/
 | `/bug-fix` | Bug 修复 |
 | `/refactor` | 代码重构 |
 | `/learn` | 学习问答 |
+| `/diagnose` | 系统化调试（建立反馈循环） |
+| `/grill-me` | 需求访谈（问清楚再动手） |
+| `/triage` | Issue 分类（决定谁处理） |
+| `/to-issues` | 拆分 Issues（大任务拆小块） |
+| `/zoom-out` | 代码概览（看森林不看树木） |
+| `/caveman` | 压缩模式（输出更短更快） |
 
 ### 自动路由
 
@@ -183,7 +189,13 @@ I-Know/
     ├── feature-dev/             # 新功能开发
     ├── bug-fix/                 # Bug 修复
     ├── refactor/                # 代码重构
-    └── learn/                   # 学习问答
+    ├── learn/                   # 学习问答
+    ├── diagnose/                # 系统化调试
+    ├── grill-me/                # 需求访谈
+    ├── triage/                  # Issue 分类
+    ├── to-issues/               # 拆分 Issues
+    ├── zoom-out/                # 代码概览
+    └── caveman/                 # 压缩模式
 ```
 
 ### 核心文件说明
